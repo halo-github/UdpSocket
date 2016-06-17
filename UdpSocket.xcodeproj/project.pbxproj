@@ -16,6 +16,8 @@
 		C4DD98A91D0D5F5700E25805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DD98A71D0D5F5700E25805 /* LaunchScreen.storyboard */; };
 		C4DD98B41D0D5F5700E25805 /* UdpSocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DD98B31D0D5F5700E25805 /* UdpSocketTests.m */; };
 		C4DD98BF1D0D5F5700E25805 /* UdpSocketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DD98BE1D0D5F5700E25805 /* UdpSocketUITests.m */; };
+		C4DD98CE1D0D5FA700E25805 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DD98CD1D0D5FA700E25805 /* GCDAsyncUdpSocket.m */; };
+		C4DD98D31D0EA9C600E25805 /* mtv.h264 in Resources */ = {isa = PBXBuildFile; fileRef = C4DD98D21D0EA9C600E25805 /* mtv.h264 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		C4DD98BA1D0D5F5700E25805 /* UdpSocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UdpSocketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DD98BE1D0D5F5700E25805 /* UdpSocketUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UdpSocketUITests.m; sourceTree = "<group>"; };
 		C4DD98C01D0D5F5700E25805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4DD98CC1D0D5FA700E25805 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		C4DD98CD1D0D5FA700E25805 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		C4DD98D21D0EA9C600E25805 /* mtv.h264 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mtv.h264; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +125,9 @@
 		C4DD98961D0D5F5700E25805 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C4DD98D21D0EA9C600E25805 /* mtv.h264 */,
+				C4DD98CC1D0D5FA700E25805 /* GCDAsyncUdpSocket.h */,
+				C4DD98CD1D0D5FA700E25805 /* GCDAsyncUdpSocket.m */,
 				C4DD98971D0D5F5700E25805 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -250,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4DD98A91D0D5F5700E25805 /* LaunchScreen.storyboard in Resources */,
+				C4DD98D31D0EA9C600E25805 /* mtv.h264 in Resources */,
 				C4DD98A61D0D5F5700E25805 /* Assets.xcassets in Resources */,
 				C4DD98A11D0D5F5700E25805 /* Main.storyboard in Resources */,
 			);
@@ -277,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4DD98A41D0D5F5700E25805 /* UdpSocket.xcdatamodeld in Sources */,
+				C4DD98CE1D0D5FA700E25805 /* GCDAsyncUdpSocket.m in Sources */,
 				C4DD989E1D0D5F5700E25805 /* ViewController.m in Sources */,
 				C4DD989B1D0D5F5700E25805 /* AppDelegate.m in Sources */,
 				C4DD98981D0D5F5700E25805 /* main.m in Sources */,
@@ -423,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UdpSocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yidahulian.UdpSocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -434,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UdpSocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yidahulian.UdpSocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +517,7 @@
 				C4DD98C51D0D5F5700E25805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4DD98C61D0D5F5700E25805 /* Build configuration list for PBXNativeTarget "UdpSocketTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				C4DD98C81D0D5F5700E25805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4DD98C91D0D5F5700E25805 /* Build configuration list for PBXNativeTarget "UdpSocketUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +535,7 @@
 				C4DD98CB1D0D5F5700E25805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

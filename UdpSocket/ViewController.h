@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GCDAsyncUdpSocket.h"
+@interface ViewController : UIViewController<GCDAsyncUdpSocketDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *vImg;
 
-@interface ViewController : UIViewController
 
 
 @end
